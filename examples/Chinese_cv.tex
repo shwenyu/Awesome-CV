@@ -18,7 +18,13 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[UTF8, 11pt, a4paper]{awesome-cv}
+
+% Configure fonts
+\usepackage{fontspec}
+\setmainfont{SimSun}
+\setsansfont{SimHei}
+\setmonofont{FangSong}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -51,10 +57,10 @@
 %-------------------------------------------------------------------------------
 %Available options: circle|rectangle,edge/noedge,left/right
 \photo[rectangle,noedge,right]{./logo.jpeg}
-\name{Hanyu}{Shou}
+\name{寿}{涵宇}
 %\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\position{Undergraduate Student{\enskip\cdotp\enskip}Biomedical Informatics}
-\address{ZJU-UoE Institute, Zhejiang University, 718 East Haizhou Rd., Haining, Zhejiang, 314400, P.R. China}
+\position{生物信息学{\enskip\cdotp\enskip}本科生}
+\address{浙江大学爱丁堡大学联合学院，中国浙江省海宁市海州东路718号，314400}
 
 \mobile{(+86) 13486540734}
 \email{hanyu.24@intl.zju.edu.cn}
@@ -101,9 +107,8 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{cv/education.tex}
-\input{cv/research.tex}
-\input{cv/skills.tex}
+\input{cv/edu_c.tex}
+\input{cv/skill_c.tex}
 \input{cv/experience.tex}
 \input{cv/extracurricular.tex}
 %\input{cv/honors.tex}
